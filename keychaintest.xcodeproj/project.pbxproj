@@ -14,6 +14,8 @@
 		15BD04AE19F41BE300E148D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BD04AD19F41BE300E148D2 /* Images.xcassets */; };
 		15BD04B119F41BE300E148D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BD04AF19F41BE300E148D2 /* LaunchScreen.xib */; };
 		15BD04BD19F41BE300E148D2 /* keychaintestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD04BC19F41BE300E148D2 /* keychaintestTests.m */; };
+		15BD04C819F41DA700E148D2 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BD04C719F41DA700E148D2 /* KeychainItemWrapper.m */; };
+		15BD04CA19F41E1A00E148D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BD04C919F41E1A00E148D2 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		15BD04B619F41BE300E148D2 /* keychaintestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keychaintestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BD04BB19F41BE300E148D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15BD04BC19F41BE300E148D2 /* keychaintestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keychaintestTests.m; sourceTree = "<group>"; };
+		15BD04C619F41D8500E148D2 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		15BD04C719F41DA700E148D2 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		15BD04C919F41E1A00E148D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BD04CA19F41E1A00E148D2 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		15BD049419F41BE200E148D2 = {
 			isa = PBXGroup;
 			children = (
+				15BD04C919F41E1A00E148D2 /* Security.framework */,
 				15BD049F19F41BE200E148D2 /* keychaintest */,
 				15BD04B919F41BE300E148D2 /* keychaintestTests */,
 				15BD049E19F41BE200E148D2 /* Products */,
@@ -85,6 +92,8 @@
 				15BD04A519F41BE200E148D2 /* AppDelegate.m */,
 				15BD04A719F41BE200E148D2 /* ViewController.h */,
 				15BD04A819F41BE200E148D2 /* ViewController.m */,
+				15BD04C619F41D8500E148D2 /* KeychainItemWrapper.h */,
+				15BD04C719F41DA700E148D2 /* KeychainItemWrapper.m */,
 				15BD04AA19F41BE300E148D2 /* Main.storyboard */,
 				15BD04AD19F41BE300E148D2 /* Images.xcassets */,
 				15BD04AF19F41BE300E148D2 /* LaunchScreen.xib */,
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BD04C819F41DA700E148D2 /* KeychainItemWrapper.m in Sources */,
 				15BD04A919F41BE200E148D2 /* ViewController.m in Sources */,
 				15BD04A619F41BE200E148D2 /* AppDelegate.m in Sources */,
 				15BD04A319F41BE200E148D2 /* main.m in Sources */,
@@ -346,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = keychaintest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = keychaintest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
